@@ -133,13 +133,13 @@ with tab2:
     if weather_file is not None:
         new_weather = pd.read_csv(weather_file)
         st.session_state["uploaded_weather"] = new_weather
-        st.success("✅ Weather data uploaded!")
+        st.success("Weather data uploaded!")
         st.dataframe(new_weather)
 
     if drops_file is not None:
         new_drops = pd.read_csv(drops_file)
         st.session_state["uploaded_drops"] = new_drops
-        st.success("✅ SIT drop data uploaded!")
+        st.success("SIT drop data uploaded!")
         st.dataframe(new_drops)
 
 
